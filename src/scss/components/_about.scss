@@ -1,0 +1,39 @@
+.about {
+  padding: 40px;
+}
+
+.about__title {
+  margin: 0 0 40px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    text-align: center;
+}
+.about__logo {
+  width: 180px;
+  height: 70px;
+}
+
+.about__list {
+  // border: 1px solid red;
+  h3 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  li {
+    list-style-type: none;
+    // border: 1px solid yellowgreen;
+  }
+}
+
+.about__desc {
+  margin-top: 20px;
+  font-size: 30px;
+}

@@ -1,0 +1,16 @@
+@import './components/all';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  // outline: 1px solid red;
+}
+
+.root {
+//   background: rgb(245,245,245);
+// background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(43,58,136,1) 100%);
+background-color: #dddee2;
+color: black;
+}
