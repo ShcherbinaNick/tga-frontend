@@ -17,7 +17,7 @@ const Header = () => {
             <img src={teleIcon}  className='header__links-icon' />
             +7(727)2924911
           </Link>
-          <Link to='mailto:dsa.kaz@mail.ru' className='header__links'>
+          <Link to='mailto:dsa.kaz@mail.ru' className='header__links' target="_blank">
             <img src={emailIcon} className='header__links-icon' />
             dsa.kaz@mail.ru
           </Link>
