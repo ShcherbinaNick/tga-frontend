@@ -1,3 +1,15 @@
 .product {
   margin: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.product__info {
+  margin-left: 70px;
+}
+
+.product__img {
+  width: 500px;
+  height: 500px;
 }
