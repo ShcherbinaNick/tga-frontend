@@ -1,9 +1,9 @@
 import React from 'react';
-import { data } from '../../data';
 import { Link, Route, Routes } from 'react-router-dom';
 import Promo from '../Promo/Promo';
 
-const Content = () => {
+const Content = ({ data }) => {
+
   return (
     <main className='content'>
       <Routes>
@@ -11,13 +11,13 @@ const Content = () => {
       </Routes>
       <p className='content__desc'>Мы предлагаем:</p>
       <ul className='content__grid'>
-        {data.map((product, index) => {
+        {data.map((product) => {
           return (
-            <li key={index} className='content__grid-item'>
+            <li key={product.id} className='content__grid-item'>
               <Link to='product' className='content__item-link'>
                 <img
                   className='content__grid-item-image'
-                  src={product.imageUrl}
+                  src={product.photo}
                   alt='изображение товара'
                 />
                 <h2 className='content__grid-item-title'>{product.title}</h2>
