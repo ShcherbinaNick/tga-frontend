@@ -8,5 +8,10 @@ export default defineConfig({
     host: '0.0.0.0', // Доступ извне
     port: 5173,      // Ваш порт
     strictPort: true // Фиксируем порт
-  }
+  },
+  hmr: {
+    clientPort: 443 // Ensures HMR works with Ngrok
+  },
+  allowedHosts: "all",
+  cors: true
 })
