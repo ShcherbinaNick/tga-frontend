@@ -3,13 +3,16 @@
   display: flex;
   flex-direction: row;
   text-align: center;
+  @media (max-width: 800px) {
+    margin: 20px;
+  }
 }
 
 .product__info {
-  margin-left: 70px;
+  margin-left: 40px;
 }
 
 .product__img {
-  width: 500px;
-  height: 500px;
+  width: 100px;
+  height: 100px;
 }
