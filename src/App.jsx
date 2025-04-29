@@ -12,7 +12,7 @@ function App() {
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://localhost:4000/products')
+    fetch('https://inuenisse.serveo.net/products')
       .then((res) => res.json())
       .then((dataArr) => {
         setData(dataArr);

@@ -1,17 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0', // Доступ извне
-    port: 5173,      // Ваш порт
-    strictPort: true // Фиксируем порт
-  },
-  hmr: {
-    clientPort: 443 // Ensures HMR works with Ngrok
-  },
-  allowedHosts: "all",
-  cors: true
+    host: '0.0.0.0',      // Access from outside
+    port: 5173,
+    strictPort: true,
+    cors: true,
+    hmr: {
+      clientPort: 443     // For HTTPS tunnels (Serveo, Ngrok, etc.)
+    },
+    allowedHosts: ['.serveo.net']  // Accept Serveo subdomains
+  }
 })

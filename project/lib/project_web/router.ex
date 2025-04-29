@@ -3,7 +3,7 @@ defmodule Project.Router do
   require Logger
 
   plug(CORSPlug,
-    origin: ["http://localhost:5173"]
+    origin: ["*"]
   )
 
   alias Repository.{Description, Products, Slider}
